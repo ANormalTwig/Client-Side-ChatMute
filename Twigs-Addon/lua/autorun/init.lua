@@ -72,7 +72,7 @@ if CLIENT then
                             end
                         end
                     else
-                        msgply:ChatPrint( "No arguments provided." )
+                        chat.AddText( "Insufficient arguments provided." )
                     end
                 elseif Command=="punmute" then
                     if table.Count(Args)>1 then
@@ -95,7 +95,7 @@ if CLIENT then
                             end
                         end
                     else
-                        msgply:ChatPrint( "No arguments provided." )
+                        chat.AddText( "Insufficient arguments provided." )
                     end
                 elseif Command=="pmsg" then
                     table.remove( Args , 1 )
@@ -126,7 +126,7 @@ if CLIENT then
                             end
                         end
                     else
-                        chat.AddText( "Innsufficient arguments provided." )
+                        chat.AddText( "Insufficient arguments provided." )
                     end
                 else
                     WTR = false
